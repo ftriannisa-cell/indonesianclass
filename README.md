@@ -1,0 +1,712 @@
+[indonesian_class_ad_english.html](https://github.com/user-attachments/files/25143360/indonesian_class_ad_english.html)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Indonesian with a Trilingual Professional</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fffef9;
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #fdcb6e 0%, #fab1a0 100%);
+            color: #2d3436;
+            padding: 60px 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header .subtitle {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            opacity: 0.95;
+        }
+        
+        .header .tagline {
+            font-size: 1.1em;
+            opacity: 0.9;
+            font-style: italic;
+        }
+        
+        .flag-emoji {
+            font-size: 1.5em;
+            margin: 0 5px;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section h2 {
+            color: #e17055;
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #fdcb6e;
+            padding-bottom: 10px;
+        }
+        
+        .why-choose {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+        
+        .feature {
+            background: linear-gradient(135deg, #a29bfe 0%, #fab1a0 100%);
+            color: #2d3436;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        
+        .feature strong {
+            display: block;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+        
+        .curriculum {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .curriculum-item {
+            background: #dfe6e9;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 5px solid #fdcb6e;
+            transition: transform 0.3s;
+        }
+        
+        .curriculum-item:hover {
+            transform: translateY(-5px);
+            background: #ffeaa7;
+        }
+        
+        .curriculum-item .number {
+            font-weight: bold;
+            color: #e17055;
+            margin-right: 5px;
+        }
+        
+        .special-item {
+            background: #ffeaa7;
+            border-left-color: #e17055;
+            font-weight: bold;
+        }
+        
+        .benefits {
+            background: #dfe6e9;
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+        
+        .benefits ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .benefits li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .benefits li:before {
+            content: "🎁";
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+        }
+        
+        .pricing {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .price-card {
+            background: #fffef9;
+            border: 3px solid #ffeaa7;
+            border-radius: 20px;
+            padding: 35px;
+            text-align: center;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .price-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(253,203,110,0.3);
+        }
+        
+        .price-card.featured {
+            border-color: #fab1a0;
+            border-width: 4px;
+            background: linear-gradient(135deg, #fffef9 0%, #fff5f5 100%);
+        }
+        
+        .price-card.featured::before {
+            content: "⭐ BEST VALUE!";
+            position: absolute;
+            top: 15px;
+            right: -35px;
+            background: #e17055;
+            color: white;
+            padding: 5px 40px;
+            transform: rotate(45deg);
+            font-weight: bold;
+            font-size: 0.8em;
+        }
+        
+        .price-card h3 {
+            font-size: 1.5em;
+            color: #2d3436;
+            margin-bottom: 15px;
+        }
+        
+        .price {
+            font-size: 2.5em;
+            color: #e17055;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        
+        .price-detail {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+        
+        .price-features {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+            text-align: left;
+        }
+        
+        .price-features li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .price-features li:before {
+            content: "✅ ";
+            color: #27ae60;
+        }
+        
+        .savings {
+            background: #27ae60;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        
+        .perfect-for {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .target-card {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+            color: #2d3436;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        
+        .target-card .emoji {
+            font-size: 2em;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #a29bfe 0%, #fab1a0 100%);
+            color: #2d3436;
+            padding: 50px 40px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        .cta-section h2 {
+            color: #2d3436;
+            border: none;
+            font-size: 2.2em;
+            margin-bottom: 30px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        
+        .contact-item {
+            background: rgba(255,255,255,0.4);
+            padding: 20px 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,0.5);
+        }
+        
+        .contact-item strong {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 0.9em;
+        }
+        
+        .contact-item a {
+            color: #2d3436;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        
+        .testimonials {
+            background: #dfe6e9;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+        
+        .testimonial {
+            background: #fffef9;
+            padding: 20px;
+            border-left: 5px solid #fdcb6e;
+            margin-bottom: 15px;
+            border-radius: 10px;
+        }
+        
+        .testimonial p {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        
+        .testimonial .author {
+            text-align: right;
+            color: #636e72;
+            font-weight: bold;
+        }
+        
+        .about-teacher {
+            background: linear-gradient(135deg, #ffeaa7 0%, #a29bfe 100%);
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+        
+        .limited-slots {
+            background: #ffeaa7;
+            border: 3px dashed #e17055;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .limited-slots strong {
+            color: #e17055;
+            font-size: 1.2em;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .section h2 {
+                font-size: 1.5em;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🌏 Master Indonesian with a Trilingual Professional!</h1>
+            <div class="subtitle">1-on-1 Private Classes • Learn Formal & Informal Bahasa Indonesia</div>
+            <div class="tagline">Taught by a Professional Interpreter</div>
+            <div style="margin-top: 20px; font-size: 1.2em; opacity: 0.95;">
+                Indonesian • English • Spanish Speaker
+            </div>
+            <div style="margin-top: 15px; font-size: 1em;">
+                @trilinguecita
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <!-- Introduction -->
+            <div class="section">
+                <p style="font-size: 1.2em; text-align: center; color: #555; margin-bottom: 20px;">
+                    Are you struggling to communicate in Indonesia? Let me help you speak Indonesian <strong>confidently</strong> in just 20 sessions!
+                </p>
+                <p style="font-size: 1.1em; text-align: center; color: #e17055; font-weight: bold; margin-bottom: 10px;">
+                    👤 100% Private 1-on-1 Classes • Personalized Learning
+                </p>
+            </div>
+
+            <!-- Why Choose Me -->
+            <div class="section">
+                <h2>👨‍🏫 Why Choose Me?</h2>
+                <div class="why-choose">
+                    <div class="feature">
+                        <strong>🌐 Trilingual Professional</strong>
+                        Professional interpreter in Indonesian, English, and Spanish
+                    </div>
+                    <div class="feature">
+                        <strong>🎓 DELE Certified Spanish</strong>
+                        Official Spanish certification + Professional interpreter experience
+                    </div>
+                    <div class="feature">
+                        <strong>🇮🇩 Native Speaker</strong>
+                        Born and raised in Indonesia with 3+ years teaching experience
+                    </div>
+                    <div class="feature">
+                        <strong>💬 Teach in English or Spanish</strong>
+                        Crystal-clear explanations in your preferred language
+                    </div>
+                    <div class="feature">
+                        <strong>📚 Formal & Informal Indonesian</strong>
+                        Learn to speak naturally in any situation
+                    </div>
+                    <div class="feature">
+                        <strong>💻 Flexible Online Classes</strong>
+                        75-minute sessions - longer than average for better results!
+                    </div>
+                </div>
+            </div>
+
+            <!-- Curriculum -->
+            <div class="section">
+                <h2>📚 Complete A1 Curriculum (20 Sessions)</h2>
+                <p style="margin-bottom: 20px; font-size: 1.1em;">From zero to confident speaker - structured learning path:</p>
+                <div class="curriculum">
+                    <div class="curriculum-item"><span class="number">📝</span> Introduction & Basics (Numbers, Time)</div>
+                    <div class="curriculum-item"><span class="number">👥</span> Daily Life (Family, Hobbies, Food)</div>
+                    <div class="curriculum-item"><span class="number">🏙️</span> Getting Around (Transportation, Directions)</div>
+                    <div class="curriculum-item"><span class="number">💼</span> Work & Communication (Office, Phone Calls)</div>
+                    <div class="curriculum-item special-item"><span class="number">⭐</span> Mid-term Review & Evaluation</div>
+                    <div class="curriculum-item"><span class="number">🌤️</span> Environment & Health (Weather, Body, Home)</div>
+                    <div class="curriculum-item"><span class="number">📅</span> Plans & Past Experiences (Appointments, Stories)</div>
+                    <div class="curriculum-item"><span class="number">✈️</span> Travel & Leisure (Vacations, Tourism, Animals)</div>
+                    <div class="curriculum-item special-item"><span class="number">🎉</span> Final Evaluation & Closing</div>
+                </div>
+            </div>
+
+            <!-- What's Included -->
+            <div class="section">
+                <h2>🎁 What's Included?</h2>
+                <div class="benefits">
+                    <h3 style="margin-bottom: 15px; color: #e74c3c;">ALL PACKAGES INCLUDE:</h3>
+                    <ul>
+                        <li><strong>Complete PDF Learning Materials</strong> - comprehensive study guides</li>
+                        <li><strong>Digital Flashcards</strong> - for vocabulary practice anytime</li>
+                        <li><strong>WhatsApp Study Group</strong> - connect with all my students for practice and support!</li>
+                    </ul>
+                    
+                    <h3 style="margin-top: 25px; margin-bottom: 15px; color: #e17055;">20-SESSION PACKAGE EXCLUSIVE BONUS:</h3>
+                    <ul>
+                        <li><strong>🎉 1 FREE Offline Class in Jakarta</strong> - practice in person with real-world scenarios!</li>
+                        <li><strong>Certificate of Completion</strong> - prove your achievement!</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Pricing -->
+            <div class="section">
+                <h2>💰 Investment in Your Future</h2>
+                <p style="text-align: center; font-size: 1.1em; margin-bottom: 20px; color: #e17055; font-weight: bold;">
+                    All prices are for 1-on-1 private sessions (75 minutes each)
+                </p>
+                <div class="pricing">
+                    <!-- Single Session -->
+                    <div class="price-card">
+                        <h3>📌 Single Session</h3>
+                        <div class="price">IDR 200,000</div>
+                        <div class="price-detail">75 minutes per session</div>
+                        <ul class="price-features">
+                            <li>Perfect for trial</li>
+                            <li>Specific consultation</li>
+                            <li>Test the teaching style</li>
+                            <li>PDF materials included</li>
+                        </ul>
+                    </div>
+
+                    <!-- 10 Sessions -->
+                    <div class="price-card">
+                        <h3>📦 10-Session Package</h3>
+                        <div class="price">IDR 1,900,000</div>
+                        <div class="price-detail">IDR 190,000 per session</div>
+                        <ul class="price-features">
+                            <li>Build strong foundation</li>
+                            <li>Complete PDF materials</li>
+                            <li>Digital flashcards</li>
+                            <li>WhatsApp study group access</li>
+                            <li>Flexible scheduling</li>
+                        </ul>
+                        <div class="savings">Save IDR 100,000!</div>
+                    </div>
+
+                    <!-- 20 Sessions - Featured -->
+                    <div class="price-card featured">
+                        <h3>🏆 20-Session Package</h3>
+                        <div style="font-weight: bold; color: #e74c3c; margin-bottom: 10px;">COMPLETE A1 LEVEL</div>
+                        <div class="price">IDR 3,700,000</div>
+                        <div class="price-detail">IDR 185,000 per session</div>
+                        <ul class="price-features">
+                            <li>Full structured course</li>
+                            <li>Complete PDF materials</li>
+                            <li>Digital flashcards</li>
+                            <li>WhatsApp group - lifetime!</li>
+                            <li>Certificate of completion</li>
+                            <li>🎁 1 FREE offline class!</li>
+                        </ul>
+                        <div class="savings">Save IDR 300,000 + Get FREE Session!<br>(Total: 21 meetings)</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Perfect For -->
+            <div class="section">
+                <h2>🎯 Perfect For</h2>
+                <div class="perfect-for">
+                    <div class="target-card">
+                        <span class="emoji">🇪🇸</span>
+                        <strong>Spanish/Latin American Expats</strong>
+                        <p>I explain everything in Spanish!</p>
+                    </div>
+                    <div class="target-card">
+                        <span class="emoji">🇺🇸</span>
+                        <strong>English-Speaking Professionals</strong>
+                        <p>Working in Indonesia</p>
+                    </div>
+                    <div class="target-card">
+                        <span class="emoji">🌍</span>
+                        <strong>International Students</strong>
+                        <p>Newcomers to Jakarta</p>
+                    </div>
+                    <div class="target-card">
+                        <span class="emoji">💼</span>
+                        <strong>Business Professionals</strong>
+                        <p>Need Indonesian for work</p>
+                    </div>
+                    <div class="target-card">
+                        <span class="emoji">👨‍👩‍👧</span>
+                        <strong>Expat Families</strong>
+                        <p>Integrate into culture</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schedule -->
+            <div class="section">
+                <h2>📅 Flexible Scheduling</h2>
+                <div style="background: #dfe6e9; padding: 25px; border-radius: 15px; margin-top: 20px;">
+                    <div style="margin-bottom: 15px;">
+                        <strong style="color: #e17055; font-size: 1.1em;">⚡ Recommended:</strong> 2x per week 
+                        <span style="color: #636e72;">(complete A1 in 2.5 months)</span>
+                    </div>
+                    <div>
+                        <strong style="color: #e17055; font-size: 1.1em;">🌙 Relaxed pace:</strong> 1x per week 
+                        <span style="color: #636e72;">(complete A1 in 5 months)</span>
+                    </div>
+                    <p style="margin-top: 20px; text-align: center; font-style: italic;">
+                        We'll find a schedule that works for YOUR life!
+                    </p>
+                </div>
+            </div>
+
+            <!-- Why Learn Indonesian -->
+            <div class="section">
+                <h2>🌟 Why Learn Indonesian?</h2>
+                <div style="background: linear-gradient(135d, #a29bfe 0%, #ffeaa7 100%); color: #2d3436; padding: 30px; border-radius: 15px; margin-top: 20px;">
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 10px 0; border-bottom: 1px solid rgba(45,52,54,0.1);">✨ Connect deeper with Indonesian colleagues and friends</li>
+                        <li style="padding: 10px 0; border-bottom: 1px solid rgba(45,52,54,0.1);">✨ Navigate Jakarta with confidence</li>
+                        <li style="padding: 10px 0; border-bottom: 1px solid rgba(45,52,54,0.1);">✨ Order food like a local (no more pointing at menus!)</li>
+                        <li style="padding: 10px 0; border-bottom: 1px solid rgba(45,52,54,0.1);">✨ Negotiate better prices at markets</li>
+                        <li style="padding: 10px 0; border-bottom: 1px solid rgba(45,52,54,0.1);">✨ Understand Indonesian culture and customs</li>
+                        <li style="padding: 10px 0;">✨ Impress your Indonesian partner's family! 😊</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- About Teacher -->
+            <div class="section">
+                <h2>👔 About Your Teacher</h2>
+                <div class="about-teacher">
+                    <p style="font-size: 1.1em; margin-bottom: 15px;">
+                        Hi! I'm <strong>Annisa</strong>, a <strong>professional interpreter</strong> working with Indonesian, English, and Spanish daily. I've been teaching languages since 2023 (3+ years experience) and hold an official <strong>DELE certificate</strong> in Spanish.
+                    </p>
+                    <p style="margin-bottom: 15px;">
+                        <strong style="color: #e17055;">My Educational Background:</strong>
+                    </p>
+                    <p style="margin-bottom: 15px;">
+                        📚 <strong>Bachelor's Degree:</strong> Geography Education<br>
+                        🎓 <strong>Master's Degree:</strong> Urban and Regional Planning<br>
+                        👩‍🏫 <strong>Former University Lecturer</strong> - I know how to make complex concepts easy to understand
+                    </p>
+                    <p style="margin-bottom: 15px;">
+                        <strong style="color: #e17055;">My Professional Experience:</strong>
+                    </p>
+                    <p style="margin-bottom: 15px;">
+                        🏢 <strong>Japanese Civil Engineering Company</strong> - International work experience<br>
+                        🏛️ <strong>Local Government Consultant</strong> - Policy and planning expertise<br>
+                        🇮🇩 <strong>Indonesian Ministry</strong> - Government sector experience<br>
+                        🌍 <strong>Professional Interpreter</strong> - Indonesian/English/Spanish
+                    </p>
+                    <p style="margin-bottom: 15px;">
+                        <strong style="color: #e17055;">My Teaching Reach:</strong>
+                    </p>
+                    <p style="margin-bottom: 15px;">
+                        I've successfully taught languages to students from diverse backgrounds including <strong>Asia, Middle East, Southern Europe, New York, and Latin America</strong>. This international teaching experience helps me understand the unique challenges each student faces when learning Indonesian.
+                    </p>
+                    <p style="margin-bottom: 15px;">
+                        <strong style="color: #e17055;">What makes my classes different?</strong>
+                    </p>
+                    <p style="margin-bottom: 15px;">
+                        I don't just teach you phrases - I help you <strong>understand WHY</strong> Indonesian works the way it does. With my background in education, experience as a university lecturer, and work in international professional settings, I know how to break down complex grammar into simple, memorable lessons that apply to real-world situations. Because I'm fluent in three languages, I can explain tricky concepts in <strong>English or Spanish</strong>, using comparisons you'll actually understand.
+                    </p>
+                    <p>
+                        Plus, I teach you <strong>REAL Indonesian</strong> - both the formal language for professional settings (like I used in government and corporate work) AND the informal, everyday language Indonesians actually use with friends!
+                    </p>
+                </div>
+            </div>
+
+            <!-- Testimonials -->
+            <div class="section">
+                <h2>💬 What My Students Say</h2>
+                <div class="testimonials">
+                    <div class="testimonial">
+                        <p>"After two weeks of Ms. Annisa's English course, I've thoroughly enjoyed the experience. The lessons were engaging and easy to understand, with helpful modules that I can revisit. The provided tips and tricks made learning English more manageable. Additionally, Ms. Annisa's quick responses to my questions were greatly appreciated. I've also found the American accent pronunciation tips easy to follow. Overall, I'm very happy with the course."</p>
+                        <div class="author">- Tsaqila, High School Student</div>
+                    </div>
+                    <div class="testimonial">
+                        <p>"The private class with Nisa was enjoyable beyond expectations; it made me more confident when presenting because the tips were handy. The lessons given were right on target as I wanted. Besides, the flexible class time makes it easy for me as a working mom. In the future, it will grow and become more successful."</p>
+                        <div class="author">- Nirmawana, University Lecturer</div>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Before this course, I struggled with understanding English conversations. Now, thanks to the interactive and engaging lessons, I can follow conversations better and even start my own. The course has significantly improved my everyday spoken English."</p>
+                        <div class="author">- Susi, Government Consultant</div>
+                    </div>
+                    <div class="testimonial">
+                        <p>"It was fun! Ms. Annisa is very kind and friendly. I've learned a lot of new vocabulary and English lessons thanks to her."</p>
+                        <div class="author">- Shanum, Primary Student</div>
+                    </div>
+                    <div class="testimonial">
+                        <p>"I contacted Ms Annisa when I had to face an interview test in English because I lacked confidence when had conversation in English. At that time I took private class, and Miss Annisa really helped me to improve my skills and self-confidence, her way of teaching was very unique and made it easier for me to understand English. That's why, I offer this English course to my daughter, by taking private class too. Even though it's via Zoom, she was still enthusiastic, and decided to join the English club at her school now. I think studying with Miss Nisa will definitely be fun...👍🏻"</p>
+                        <div class="author">- Sanya, Weather Forecaster</div>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Classes with Annisa are outstanding! She understood my needs from the very first session and worked closely with me to improve my Bahasa Indonesia skills. I highly recommend her as a teacher for both beginners and advanced students."</p>
+                        <div class="author">- Carlos, Computer Engineer</div>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Annisa goes straight to the point and teaches patiently. I highly recommend it for Spanish and English speakers who want to start learning Indonesian."</p>
+                        <div class="author">- Igor, Software Engineer</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Limited Slots -->
+            <div class="limited-slots">
+                <h3 style="margin-bottom: 10px;">🎁 Limited Availability!</h3>
+                <p>I only accept a <strong>limited number of students</strong> each month to ensure personalized attention and quality teaching.</p>
+                <p style="margin-top: 10px; font-size: 1.1em;"><strong>Don't miss out - book your trial session today!</strong></p>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="cta-section">
+            <h2>📱 Ready to Start Speaking Indonesian?</h2>
+            <p style="font-size: 1.2em; margin-bottom: 30px;">Contact me now to book your trial session!</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>📲 WhatsApp</strong>
+                    <a href="https://wa.me/6282217405302">+62 822-1740-5302</a>
+                </div>
+                <div class="contact-item">
+                    <strong>📧 Email</strong>
+                    <a href="mailto:ftriannisa@gmail.com">ftriannisa@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <strong>📍 Location</strong>
+                    <div style="font-size: 1.2em; font-weight: bold;">Jakarta, Indonesia</div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 30px;">
+                <p style="font-size: 1.1em; margin-bottom: 15px;">Follow me on social media:</p>
+                <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                    <a href="https://instagram.com/trilinguecita" style="color: white; text-decoration: none; font-size: 1.2em;">📷 Instagram</a>
+                    <a href="https://tiktok.com/@trilinguecita" style="color: white; text-decoration: none; font-size: 1.2em;">🎵 TikTok</a>
+                    <a href="https://youtube.com/@trilinguecita" style="color: white; text-decoration: none; font-size: 1.2em;">▶️ YouTube</a>
+                </div>
+                <p style="margin-top: 10px; font-size: 1.1em;">@trilinguecita</p>
+            </div>
+            
+            <div style="margin-top: 40px; font-size: 1.5em; font-weight: bold;">
+                🚀 Ayo belajar Bahasa Indonesia bersama Annisa!
+            </div>
+            <div style="margin-top: 15px; font-size: 1.2em;">
+                Start your Indonesian journey today!
+            </div>
+        </div>
+    </div>
+</body>
+</html>
